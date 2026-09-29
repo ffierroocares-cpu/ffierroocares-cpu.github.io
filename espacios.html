@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <script>
+      (function () {
+        var ruta = location.pathname
+        var limpia
+        if (ruta.endsWith('/index.html')) {
+          limpia = ruta.slice(0, -'index.html'.length)
+        } else if (ruta.endsWith('.html')) {
+          limpia = ruta.slice(0, -'.html'.length) + '/'
+        } else {
+          return
+        }
+        location.replace(limpia + location.search + location.hash)
+      })()
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="canonical" href="https://casasentio.cl/espacios/" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Espacios — Casa Sentio</title>
+  
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <p>Esta página se movió a <a href="/espacios/">casasentio.cl/espacios</a>.</p>
+  </body>
+</html>
